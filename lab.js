@@ -51,7 +51,7 @@ if(amysBirthYear === brittanisBirthYear){
 }
 else{
   console.log("Amy & Brittani were not born in the same year");
-}
+} 
 
 
 ////////// PROBLEM 4 //////////
@@ -74,6 +74,9 @@ else if(temperature >60 && temperature <80 && rain === true){
 else if(temperature < 60 && rain === true){
   console.log("One should wear a jacket and carry an umbrella.")
 }
+if(temperature >= 80 && rain === false){
+  console.log("One should wear a t-shirt and take an umbrella");
+} 
 
 
 ////////// PROBLEM 5 //////////
@@ -83,6 +86,9 @@ else if(temperature < 60 && rain === true){
 */
 
 //CODE HERE
+for( let i = 0; i < 10; i++){
+  console.log(hello);
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -92,7 +98,9 @@ else if(temperature < 60 && rain === true){
 */
 
 //CODE HERE
-
+for( let i = 1; i <= 10; i++){
+  console.log(i);
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -101,6 +109,9 @@ else if(temperature < 60 && rain === true){
 */
 
 //CODE HERE
+for( let i = 10; i >= 0; i--){
+  console.log(i);
+}
 
 let score = 0
 let passingScore = 7
@@ -112,6 +123,10 @@ let passingScore = 7
 */
 
 //CODE HERE
+while (score < passingScore){
+  console.log("Your score is not high enough");
+  score++;
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -123,12 +138,24 @@ let passingScore = 7
 */
 
 //CODE HERE
+let changeMyMind = true;
+if(changeMyMind === true){
+  changeMyMind = false;
+}
+else{
+  changeMyMind = true;
+}
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
-
+if(changeMyMind !== True){
+  changeMyMind = true;
+}
+else{
+  changeMyMind = false;
+}
 
 
 ////////// ADVANCED PROBLEMS //////////
@@ -139,3 +166,10 @@ let z = 5
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+//let count = z;
+while(z > 0){
+  for(let i=z; i> 0; i--){
+    console.log(i);
+  }
+  z--;
+}
